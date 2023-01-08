@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.form {
+    width: 204px;
+    padding-top: 50px;
+}
+
+input {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    font-size: 30px;
+    background-color: cyan;
+    margin-bottom: 15px;
+}
+
+.btn {
+    width: 215px;
+    padding-top: 15px;
+}
+
+.form p {
+    padding: 20px;
+    background-color: #dcb800;
+    font-size: 20px;
+}
+
+.btn button {
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+    background-color: red;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.btn i {
+    color: aliceblue;
+    margin-left: 10px;
+}
+
+@media (max-width:320px) and (min-width:480px) {
+    .form {
+        width: 200px;
+    }
+}

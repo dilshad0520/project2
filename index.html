@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <input type="text" id="series1" placeholder="Enter">
+            <input type="text" id="series2" placeholder="Enter">
+            <p id="show"></p>
+            <div class="btn">
+                <button onclick="result()">Add<i class="fa-solid fa-plus"></i></button>
+                <button onclick="marks()">Subtract<i class="fa-solid fa-minus"></i></button>
+                <button onclick="output()">Multiply<i class="fa-solid fa-xmark"></i></button>
+                <button onclick="parsent()">Divide<i class="fa-solid fa-divide"></i></button>
+                <button onclick="input()">Modulas<i class="fa-solid fa-percent"></i></button>
+                <button onclick="cancel()">cancel</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function result() {
+            let x1 = document.getElementById('series1').value
+            let x2 = document.getElementById('series2').value
+            series1 = parseInt(x1)
+            series2 = parseInt(x2)
+            console.log(series1 + series2)
+            let show = document.getElementById('show')
+            let sum = (series1 + series2)
+            show.innerText = 'Sum Of' + series1 + ' and ' + series2 + '=' + sum
+        }
+        function marks() {
+            let x1 = document.getElementById('series1').value
+            let x2 = document.getElementById('series2').value
+            series1 = parseInt(x1)
+            series2 = parseInt(x2)
+            console.log(series1 - series2)
+            let show = document.getElementById('show')
+            let sum = (series1 - series2)
+            show.innerText = 'Sum Of' + series1 + ' and ' + series2 + '=' + sum
+        }
+        function output() {
+            let x1 = document.getElementById('series1').value
+            let x2 = document.getElementById('series2').value
+            series1 = parseInt(x1)
+            series2 = parseInt(x2)
+            console.log(series1 * series2)
+            let show = document.getElementById('show')
+            let sum = (series1 * series2)
+            show.innerText = 'Sum Of' + series1 + ' and ' + series2 + '=' + sum
+        }
+        function parsent() {
+            let x1 = document.getElementById('series1').value
+            let x2 = document.getElementById('series2').value
+            series1 = parseInt(x1)
+            series2 = parseInt(x2)
+            console.log(series1 / series2)
+            let show = document.getElementById('show')
+            let sum = (series1 / series2)
+            show.innerText = 'Sum Of' + series1 + ' and ' + series2 + '=' + sum
+        }
+        function input() {
+            let x1 = document.getElementById('series1').value
+            let x2 = document.getElementById('series2').value
+            series1 = parseInt(x1)
+            series2 = parseInt(x2)
+            console.log(series1 % series2)
+            let show = document.getElementById('show')
+            let sum = (series1 % series2)
+            show.innerText = 'Sum Of' + series1 + ' and ' + series2 + '=' + sum
+        }
+
+    </script>
+</body>
+
+</html>
